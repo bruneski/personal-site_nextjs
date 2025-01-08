@@ -1,0 +1,32 @@
+{
+  "name": "personal-site_nextjs",
+  "version": "1.0.0",
+  "description": "Professional Portfolio Site for Matthew Brune",
+  "main": "index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruneski/personal-site_nextjs.git"
+  },
+  "author": "Matthew Brune",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.3",
+    "typescript": "5.7.2"
+  },
+  "bugs": {
+    "url": "https://github.com/bruneski/personal-site_nextjs/issues"
+  },
+  "homepage": "https://github.com/bruneski/personal-site_nextjs#readme"
+}
