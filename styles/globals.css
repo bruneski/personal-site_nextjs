@@ -1,0 +1,70 @@
+@import "./utilities/headings.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    width: 100%;
+    height: 100%;
+    background: rgb(105, 11, 52);
+    background: radial-gradient(circle, rgba(105, 11, 52, 1) 0%, rgba(32, 64, 102, 1) 100%);
+    background-image: url("./cinema.gif");
+    background-size: contain;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 10%;
+}
+
+.video-embed {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-embed iframe {
+    width: 90%;
+    height: 500px;
+}
+
+#navigation {
+    width: 10%;
+    height: 100vh;
+    /* transform: skew(-11deg); */
+    position: absolute;
+    /* left: -80%; */
+    /* background: #bd5d7c; */
+    background: transparent;
+    transition: 1s ease;
+}
+
+#navigation:hover {
+    width: 30%;
+
+}
+
+#nav--main ul {
+    visibility: hidden;
+}
+
+#navigation:hover #nav--main ul {
+    visibility: visible;
+}
+
+#footer {
+    background: #454555;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer * {
+    color: white;
+}

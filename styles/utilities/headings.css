@@ -1,0 +1,13 @@
+body {
+    h1 {
+        color: white;
+        text-wrap: balance;
+    }
+    #nav {
+        &--main {
+            li {
+                color: white;
+            }
+        }
+    }
+}
