@@ -6,19 +6,19 @@
 
 html {
     width: 100%;
-    height: 100%;
     /* background: rgb(105, 11, 52); */
     /* background: radial-gradient(circle, rgba(105, 11, 52, 1) 0%, rgba(32, 64, 102, 1) 100%); */
     background-image: url("./cinema.gif");
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    background-repeat: space;
+    background-color: #CBC0AD;
 }
 
 .container {
     width: 90%;
     margin: auto;
-    overflow: scroll;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
     h1 {
         margin: 20px 0 0 0;
     }
@@ -45,7 +45,7 @@ html {
     align-items: center;
     justify-content: center;
     iframe {
-        height: 375px;
+        height: 425px;
     }
 }
 
@@ -75,7 +75,7 @@ html {
     background: #454555;
     width: 100%;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 

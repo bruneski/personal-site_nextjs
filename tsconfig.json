@@ -21,8 +21,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-  ],
+    "**/*.tsx",
+    "pages/api/projects-old.ts", 
+    "middleware/database.js"  ],
   "exclude": [
     "node_modules"
   ]
