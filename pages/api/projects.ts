@@ -68,19 +68,19 @@ router.get(async (req: NextApiRequest,
 router.post(async (req: NextApiRequest, res: NextApiResponse<ResponseData>) => {
     //let bodyObject = JSON.parse(req.body);
     console.log(`POST /projects -> `, req.body);
-    let myPost = await db.collection("projects").insertOne(req.body);
-    console.log(myPost);
-    if(myPost.acknowledged) {
-        res.status(200).json({"message": "Success", "statusCode": 200});
-    } else {
-      res.status(502).json({"message": "Bad Request", "statusCode": 502})
-    }
+    // let myPost = await db.collection("projects").insertOne(req.body);
+    // console.log(myPost);
+    // if(myPost.acknowledged) {
+    //     res.status(200).json({"message": "Success", "statusCode": 200});
+    // } else {
+    //   res.status(502).json({"message": "Bad Request", "statusCode": 502})
+    // }
 
 })
 
 router.put(async (req: NextApiRequest, res: NextApiResponse<ResponseData>) => {
     //let bodyObject = JSON.parse(req.body);
-    console.log(`POST /projects -> `, req.body);
+    console.log(`PUT /projects -> `, req.body);
     let myPost = await db.collection("projects").insertOne(req.body);
     console.log(myPost);
     if(myPost.acknowledged) {
@@ -88,7 +88,11 @@ router.put(async (req: NextApiRequest, res: NextApiResponse<ResponseData>) => {
     } else {
       res.status(502).json({"message": "Bad Request", "statusCode": 502})
     }
+})
 
+router.post(async (req: NextApiRequest, res: NextApiResponse<ResponseData>) => {
+    let bodyObject = JSON.parse(req.body);
+    console.log(`PATCH /projects -> `, bodyObject);
 })
 
 export default router.handler({

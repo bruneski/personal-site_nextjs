@@ -40,19 +40,19 @@ const Work = ({ projects, error }: WorkProps) => {
             <div className="container flex">
                     <div className="bg-backdrop w-full p-5 lg:p-20 m-auto">
                         <h1 className="black">Work</h1>
-                        <div className="grid grid-col-fr gap-3 grid-rows-auto">
+                        <div className="grid grid-col-fr gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                             {projectList}
                         </div>
                     </div>
                 </div>
-            <div className="container flex">
+            {/* <div className="container flex">
                     <div className="bg-backdrop w-full p-5 lg:p-20 m-auto">
                         <h1 className="black">Work</h1>
                         <div className="flex flex-row flex-wrap gap-10 justify-center">
                             {projectList}
                         </div>
                     </div>
-                </div>
+                </div> */}
             
         </>
     )

@@ -6,7 +6,7 @@ import '../styles/globals.css'
 export default function App({ Component, pageProps }: AppProps) {
   return (
   <>
-  <nav id="navigation" className="hover:cursor-pointer">
+  <nav id="navigation" className="hover:cursor-pointer hover:bg-slate-800/[1]">
     <Navigation/>
   </nav>
   <Component {...pageProps} />
