@@ -2,11 +2,12 @@ import type { GetServerSideProps } from "next";
 import clientPromise from "../../middleware/database";
 
 export type Project = {
-  _id?: string;
+  _id: string;
   name: string;
   category: string;
   subtitle?: string;
   thumbnail?: string;
+  uri: string;
 };
 
 type WorkProps = {
@@ -20,7 +21,7 @@ const Work = ({ projects, error }: WorkProps) => {
         return (
             //<Project key={el._id ?? index} project={el}/>
             //TODO: Add URI for the link
-            <a key={el._id ?? index} href={`/work/${el.name}`} className="bg-amber-200 h-40">
+            <a key={el._id ?? index} href={`/work/${el.uri}`} className="bg-amber-200 h-40">
                 <h3>{el.name}</h3>
                 <h5>{el.subtitle}</h5>
             </a>
